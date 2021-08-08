@@ -185,8 +185,8 @@
 													"items":[
 														"{@b {@item Carpenter's Tools|PHB}.} The signature tools of a shipwright, a set of carpenter's tools allows one to make patchwork repairs on a ship. You can use carpenter's tools to repair a ship by a number of hull points equal to your proficiency modifier. You must have appropriate materials to make the repairs, and once you repair a ship in this way, it can't be repaired in this way again until it is repaired at a shipyard.",
 														"{@b {@item Smith's Tools|PHB}.} Smith's tools function similarly to carpenter's tools but for ships equipped with metal plating.",
-														"{@b {@item Jeweler's Tools|PHB}.} Gems in this setting hold latent magical energy, and knowing the correct value of gems is a vital skill when dealing with gemforges, and any bedazzled implements you might encounter.",
-														"{@b {@item Cook's Utensils|PHB}.} Cooking meals with raw ingredients rather than expending rations is cheaper, lighter, and only doable with cook's utensils. When you have proficiency with these tools, you can cook meals for a whole ship.",
+														"{@b {@item Jeweler's Tools|PHB}.} Gems in this setting hold latent magical energy, and knowing the correct value of gems is a vital skill when dealing with gemforges and any bedazzled implements you might encounter.",
+														"{@b {@item Cook's Utensils|PHB}.} Cooking meals with raw ingredients rather than expending rations is cheaper, lighter, and only doable with cook's utensils. When you have proficiency with these tools, you can cook meals for a whole ship. The amount of raw ingredients necessary to sustain a crew can be found in the {@book Food and Water|PHB|8|Food and Water} section of the PHB.",
 														"{@b {@item Weaver's Tools|PHB}.} Having weaver's tools let you repair sails outside of port. If sails are your only mode of propulsion, these tools could be the difference between life and death."
 													]
 												},
@@ -2061,7 +2061,7 @@
         	],
         	"entries":[
         		"{@i 1,500 gp.}",
-        		"{@i An eclectic assortment of textiles and unfinished projects hang off the walls. The room is well-lit, as buckets of yarn play audience to a towering loom at the center.}",
+        		"{@i An eclectic assortment of textiles and unfinished projects hang off the walls. The room is warmly lit and harkens back to a pastoral lifestyle as buckets of yarn skirt a towering loom at the center.}",
         		"Weaver's tools and Leatherworker's tools are always considered to be present while working in this room. The time required to complete projects using these tools is halved, and any checks using these tools are made with advantage if the user has proficiency."
         	]
         },
@@ -2079,6 +2079,18 @@
         	]
         },
         {
+        	"name":"Galley",
+        	"source":"AETH",
+        	"upgradeType":[
+        		"Ship Upgrade, Room"
+        	],
+        	"entries":[
+        		"{@i 1,500 gp.}",
+        		"{@i Hot aromatic steam floats about the room, dampening the sound of sizzling fire and bubbling stew. Pots, pans, and jars of ingredients clutter the shelves while a cutting board rests like a runway to the cauldron below.}",
+        		"This room is a well-stocked kitchen, not to be confused with the class of ship called a galley. Cook's utensils are always considered to be present while working in this room, and any checks using these tools are made with advantage if the user has proficiency. Meals prepared for a crew in this room require half as many ingredients to make."
+        	]
+        },
+        {
         	"name":"Brig",
         	"source":"AETH",
         	"upgradeType":[
@@ -2086,7 +2098,7 @@
         	],
         	"entries":[
         		"{@i 1,000 gp.}",
-        		"{@i Thick iron bars separate a squalid, empty cell from the rest of the room. }",
+        		"{@i Thick iron bars separate a squalid, empty cell from the rest of the room.}",
         		"This room is equipped to hold one small or medium humanoid per 5 feet of area. The room is non-magical and the jail cell door is bound by a large lock (DC 20 to open). If a crewmember is acting as warden and providing a prisoner with food and care, their Charisma checks towards that prisoner are made with advantage."
         	]
         }
