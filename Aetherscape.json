@@ -90,7 +90,84 @@
 								"What is this, a fantasy game??",
 								"When a ship moves from breathable atmosphere to the Aether, an air pocket clings to it like a bubble. These air bubbles are large enough to sustain the crew of a ship for about 30 days. Any longer and a ship or its crew will need additional equipment to keep its crew breathing. This air pocket is not 'poppable,' and can only be removed by consuming all the air inside or by powerful magic. Even if a ship is destroyed, air will still cling to the larger debris. When a ship enters a celestial object's atmosphere, their bubble will dissipate, joining with the larger atmosphere.",
 								"Gravity, whether on Erathis, an asteroid, or even a ship, is exerted with the same force. Although gravity still applies where there is no atmosphere (such as some asteroids in Tharizdun's Disc), a good rule of thumb is that as long as you're within an object's atmosphere you'll be affected by its gravity. Where the gravity pulls is what would make sense in atmosphere: For ships, if you fall off the side while in the Aether, you'll keep falling down until you exit the air bubble. At that point, you're outside of its gravitational influence. If outside of atmosphere, suffocation rules apply and a creature takes 1 cold damage per turn.",
-								"If outside of any gravitational pull, objects can move only by pushing or pulling against a fixed object or surface within reach (such as a wall or a ceiling), which allows it to move as if it were climbing."
+								"If outside of any gravitational pull, objects can move only by pushing or pulling against a fixed object or surface within reach (such as a wall or a ceiling), which allows it to move as if it were climbing.",
+								{
+									"type":"inset",
+									"name":"Visibility in the aether",
+									"entries":[
+										"In clear conditions, visibility is essentially unlimited, however one's ability to spot other ships against the backdrop of the void is still limited by perception. The table below details the approximate difficulty of spotting ships at various distances.",
+										"A creature using a spyglass and actively on watch (i.e. not passively perceiving) has a +5 bonus to the roll.",
+										{
+											"type": "table",
+											"caption": "Perceiving at distances",
+											"colLabels": [
+												"Wisdom (Perception) DC",
+												"Distance"
+											],
+											"colStyles":[
+												"col-3 text-center",
+												"col-8"	
+											],
+											"rows":[
+												[
+													"5",
+													"400 feet"	
+												],
+												[	
+													"10",
+													"1000 feet"
+												],
+												[
+													"15",
+													"2000 feet"
+												],
+												[
+													"20",
+													"1 mile"
+												],
+												[
+													"25",
+													"5 miles"
+												],
+												[
+													"30",
+													"20 miles"
+												]
+											]
+										},
+										"Hazards and conditions in the aether can impact visibility as well.",
+										{
+											"type": "table",
+											"caption": "Visibility Conditions",
+											"colLabels": [
+												"Wisdom (Perception) DC bonus",
+												"Condition"
+											],
+											"colStyles":[
+												"col-3 text-center",
+												"col-8"	
+											],
+											"rows":[
+												[	
+													"-4",
+													"Asteroid Field"
+												],
+												[
+													"-5",
+													"Eclipse"
+												],
+												[
+													"-8",
+													"Nebula"
+												],
+												[
+													"-10",
+													"Storm"
+												]
+											]
+										}
+									]
+								}
 							]
 						}
 					]
@@ -365,7 +442,7 @@
 									"type":"entries",
 									"name":"Ship Propulsion",
 									"entries":[
-										"Propulsion is vital equipment on a ship and determine the speed and maneuvering capability of a ship. Both powered and unpowered propulsion exists, and many work differently depending on whether in air or aether. A maximum of 2 propulsion types can be installed at one time on a ship but only one may be used at any time.",
+										"Propulsion is vital equipment on a ship and determine the speed and maneuvering capability of a ship. Both powered and unpowered propulsion exists, and many work differently depending on whether in air or aether. A maximum of 2 propulsion types can be installed on a ship but only one may be used at any time.",
 										"{@filter Ship Propulsion|vehicles|source=AETH|upgrade type=SHP:M}."
 									]
 								},
@@ -373,8 +450,28 @@
 									"type":"entries",
 									"name":"Ship Modifications",
 									"entries":[
-										"Modifications are additions to ships that can be installed or uninstalled at a shipyard. Modifications come in many forms, shapes, and sizes -- from additional equipment to altered hulls to magical figureheads.",
-										"{@filter Ship Modifications|vehicles|source=AETH|upgrade type=SHP:O; Ship Upgrade, Room; SHP:H; SHP:F}."
+										"{@filter Ship Modifications|vehicles|source=AETH|upgrade type=SHP:O; Ship Upgrade, Room; SHP:H; SHP:F} are additions to ships that can be installed or uninstalled at a shipyard. Modifications come in many forms, shapes, and sizes -- from additional equipment to altered hulls to magical figureheads.",
+										{
+											"type":"entries",
+											"name":"Hulls",
+											"entries":[
+												"A {@filter ship's hull|vehicles|source=AETH|upgrade type=SHP:H} is often one of its most defining feature, and many a legendary ship are well-known by their unique hull. A ship can only have one type of hull equipped at a time."
+											]
+										},
+										{
+											"type":"entries",
+											"name":"Rooms",
+											"entries":[
+												"When a voyage might last weeks on end, a ship becomes your flying home away from home. {@filter Custom rooms|vehicles|source=AETH|upgrade type=Ship Upgrade, Room} allow you to continue your downtime activities while away from port. Keep in mind that some rooms like the Arcane Library or Assassin's Garden require components that likely won't be available at a regular shipyard."
+											]
+										},
+										{
+											"type":"entries",
+											"name":"Figureheads",
+											"entries":[
+												"Much like a ship's hull, its figurehead is an iconic face of the ship. {@filter Most figureheads|vehicles|source=AETH|upgrade type=SHP:F} in this world have magical capabilities, ranging from useful utility to combat enhancements that can turn the tide of battle. Only one figurehead can be equipped at a time."
+											]
+										}
 									]
 								},
 								{
@@ -385,8 +482,7 @@
 											"type":"entries",
 											"name":"Landing Capabilities",
 											"entries":[
-												"A ship may have landing capability, although such a feature is not guaranteed. The ability to land in water is most common, with surface landing less common. Larger ships may omit landing capabilities entirely, opting instead to stay above and send skiffs to the surface.",
-												"Aftermarket landing gear may be installed for water or land at a port. The common rate is approximately 75g/Ton."
+												"A ship may have landing capability, although such a feature is not guaranteed. The ability to land in water is most common, with surface landing less common. Larger ships may omit landing capabilities entirely, opting instead to stay above and send skiffs to the surface. Aftermarket landing gear may be installed for water or land at a port. The common rate is approximately 75g/Ton."
 											]
 										},
 										{
@@ -597,11 +693,13 @@
 											"entries":[
 												"{@b Turreted.} A turreted armament can fire in any direction, regardless of ship heading.",
 												"{@b Armored.} All crew members manning this armament gain +4 to their AC.",
-												"{@b Explosive.} Armament with the Explosive property deals area damage on impact. If the armament with explosive is destroyed, double the armament's damage is dealt around it and the armament is unrepairable.",
+												"{@b Explosive.} Armament with the Explosive property deals area damage on impact to both ship and crew. If an armament with the explosive property is destroyed, it immediately deals a critical hit on its position and the armament is unrepairable. If no radius is specified, any damage or effects occur in a 5-foot-radius.",
 												"{@b Siege.} Deals double damage against structures. Does not apply to ships.",
 												"{@b Impact.} When an armament with Impact hits, all crew on the ship struck must make a DC 15 DEX save or be unable to move or use armament until next turn.",
 												"{@b Tether.} When a vehicle is tethered it cannot use its movement to move farther from your ship. Once on each of your ship's turns thereafter, your crew may spend 2 crew actions to use the ship harpoon again, reeling the tethered ship closer by 1 hex. If this action pulls the ship into your hex, that ship is now grappled by you. The tethered ship may break the tether by destroying the harpoon, rope, or weapon.",
-												"{@b Ramming Speed.} To use a ram, your ship must move 1 full hex in a straight line before entering the same space of the target vehicle."
+												"{@b Ramming Speed.} To use a ram, your ship must move 1 full hex in a straight line before entering the same space of the target vehicle.",
+												"{@b Fire.} When this armament hits a ship, a fire is started on that ship. A crewmember must use their action to put out the flame.",
+												"{@b Grapple.} When you hit a vehicle with this armament, the struck vehicle is automatically grappled. If a percentage value is attached to this property, roll a percentile die. If the roll is higher than the value then the grapple succeeds. Otherwise, the grapple fails."
 											]
 										}
 									]
@@ -700,7 +798,8 @@
 								"{@b Dwarves.} Most dwarves still call Erathis their home, but the rich prospects of a life amongst the stars has driven many a dwarf away from their underground dwellings. As it turns out, life in a ship isn't much different from life in the mines, and the asteroids of Tharizdun's disc have riches aplenty.",
 								"{@b Rock gnomes.} Artificers at heart, these inventive gnomes took quickly to the stars, proving exceptionally gifted towards repairing and maintaining ships, as well as innovating new modifications to be installed. When your battered and bruised airship pulls into a shipyard and a rock gnome steps up to the task, you know you're in good hands.",
 								"{@b Warforged.} Believed to be the hand-made creations of Moradin himself, warforged are an extremely rare sight often interpreted as a holy omen to worshippers of Moradin.",
-								"{@b Goblins.} Although goblins are rarely seen in cities, towns, or ship crews, their reputation amongst the stars is secured. Not particularly liked, and often joked about with a punchline ending in 'goblin balls', goblins who do find their way into civilization are nevertheless appreciated on any crew for their natural proclivity for sneaking."
+								"{@b Goblins.} Although goblins are rarely seen in cities, towns, or ship crews, their reputation amongst the stars is secured. Not particularly liked, and often joked about with a punchline ending in 'goblin balls', goblins who do find their way into civilization are nevertheless appreciated on any crew for their natural proclivity for sneaking.",
+								"{@b Firbolgs.} Stronger than a bear and taller than a goliath, firbolgs have features similar to humans, often with red or blonde hair, thick beards, and fair skin. A firbolg's ancestors are said to have originated from Sehanine and, much like the high elves, returned there through aetherflight. Although firbolgs tend to prefer solitude with nature, the firbolg clans are infamous amongst the Alliance for their role in the Battle of Heddwech Valley during the Sehanine War, where an entire invasion batallion was repelled by them in an extremely pyrrhic victory. It's often told that during this battle, Claio Stonepetal sundered an armored frigate in two with a single swing of his claymore."
 							]
 						}
 					]
@@ -1486,6 +1585,71 @@
             "hasFluffImages": true
         },
         {
+        "name": "Catamaran",
+            "source": "AETH",
+            "vehicleType": "SHIP", 
+            "tokenUrl":"https://raw.githubusercontent.com/anko-dango/anko-dango/main/Cog_Nude_Floating.png",
+            "fluff":{
+            	"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/anko-dango/anko-dango/main/Cog_Nude_Full.png"
+						}
+					}
+				]	
+			},
+            "size": "G",
+            "dimensions": [
+                "65 ft.",
+                "80 ft."
+            ],
+            "weight": 32000,
+             "terrain": [
+                "air"
+            ],
+            "capCrew": 6,
+            "capCargo": 8,
+            "pace": 0,
+            "str": 16,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 10,
+            "hp": {
+                    "hp": 16,
+                    "dt": 0
+            },
+            "immune": [
+                "poison",
+                "psychic"
+            ],
+            "conditionImmune": [
+                "blinded",
+                "charmed",
+                "deafened",
+                "exhaustion",
+                "frightened",
+                "incapacitated",
+                "paralyzed",
+                "petrified",
+                "poisoned",
+                "prone",
+                "stunned",
+                "unconscious"
+            ],
+            "hull": {
+                "ac": 18,
+                "hp": 16,
+                "dt": 0
+            },
+            "hasToken": true,
+            "hasFluff": true,
+            "hasFluffImages": true
+        },
+        {
         "name": "Galleon",
             "source": "AETH",
             "vehicleType": "SHIP", 
@@ -1929,8 +2093,10 @@
         		"SHP:H"
         	],
         	"entries":[
-        		"The ship’s hull was crafted using materials from the Plane of Earth and has the appearance of slate.",
-        		"As an action, the ship can harden its hull by producing layers of thick stone, gaining resistance to bludgeoning, piercing, and slashing damage for 1 minute. The ship’s movement speed is halved for the duration."
+        		"{@i -1 Movement.}",
+        		"The ship’s hull was crafted with essence of the Plane of Earth and bears the appearance of rough slate.",
+        		"As an action, a crewmember can speak this hull's command word to fortify the ship's hull by producing layers of thick stone. For 1 minute, the ship gains 3 temporary hull points and has resistance to bludgeoning, piercing, and slashing damage. The ship’s movement speed is halved for the duration.",
+        		"If a ship with this hull type is landed on solid stone for 8 hours, it will begin to repair any critical damage it has sustained. Thereafter, the ship repairs 1 hull point for every 4 uninterrupted hours it remains in this state, although it cannot repair above half of its maximum hull points in this way."
         	]
         },
         {
@@ -1941,9 +2107,8 @@
         		"SHP:H"
         	],
         	"entries":[
-        		"{@i +1 Movement, -1 Power. 500 gp per ton.}",
-        		"The ship’s hull is made from ancient trees of the Feywild and carries the strange, transient properties of that plane.",
-        		 "As an action, the ship can change the appearance of its hull to resemble any mundane wood painted in a color or pattern of the activating creature’s choice, including a different designation or name. When this glamour is not active, the hull has a deep burnt umber color that seems to glimmer faintly in light. "
+        		"The ship’s hull is made from ancient trees of the Feywild and carries from them strange, transient properties.",
+        		 "As an action, a crewmember can speak this hull's command word to change its appearance to resemble any hull of the activating creature’s choice, including hulls of different materials, although the basic shape of the ship can't be altered (e.g., a galleon can't be disguised as a cog). When this glamour is not active, the hull has a rich burnt umber color that seems to glimmer faintly in light. "
         	]
         },
         {
@@ -1955,7 +2120,20 @@
         	],
         	"entries":[
         		"{@i -2 AC.}",
-        		"The ship’s hull is warded against divination, with faintly sparkling diamond dust and thin layers of lead worked into the wood. The ship itself cannot be found by an echo pool or with spells like the locate object spell, and creatures aboard the ship have advantage on their saving throws against divination magic."
+        		"The ship’s hull is warded against divination, with faintly sparkling diamond dust and thin layers of lead worked into the wood. The ship itself cannot be found by an echo pool or with spells like the locate object spell, and creatures aboard the ship have advantage on their saving throws against divination magic.",
+        		"This modification softenes the hull, reducing its ability to deflect or absorb attacks from armament."
+        	]
+        },
+        {
+        	"name":"Glacial Hull",
+        	"source":"AETH",
+        	"upgradeType":[
+        		"SHP:H"
+        	],
+        	"entries":[
+        		"{@i  AC.}",
+        		"Thick, glacial ice forms the hull of the ship. Any creature onboard a ship with this hull installed is subjected to {@hazard extreme cold}.",
+        		"This modification softenes the hull, reducing its ability to deflect or absorb attacks from armament."
         	]
         },
         {
@@ -1978,7 +2156,7 @@
         	],
         	"entries":[
         		"This painted wood carving depicts a wise wizard gazing forward with purpose. In one arm it appears to be holding a spellbook while the other arm is raised forward with palm open, as if extending a warning.",
-        		"Any creature can cast an Abjurgation spell of 1st level or higher into the figurehead, touching the figurehead as the spell is cast. The spell has no effect, other than to be stored in the figurehead. The figure can store one spell at a time. If the figurehead can't hold the spell, the spell is expended wihtout effect.",
+        		"Any creature can cast an Abjuration spell of 1st level or higher into the figurehead, touching the figurehead as the spell is cast. The spell has no effect, other than to be stored in the figurehead. The figure can store one spell at a time. If the figurehead can't hold the spell, the spell is expended wihtout effect.",
         		"Any crewmember aboard the ship can activate the figurehead to use the spell stored within. The spell uses the slot level, spell save DC, spell attack bonus, and spellcasting ability of the original caster, but is otherwise treated as if you cast the spell. The spell cast from the figurehead is no longer stored in it, freeing up space for another spell.",
         		"A spell with a range of touch can only target the ship, and a spell with a range of self can only target the ship itself. If a spell would have no effect when applied to the ship, it fails and has no effect but is still consumed."
         	]
@@ -1993,6 +2171,19 @@
         		"This wooden figurehead depicts a great boar seemingly charging out of the woodwork with two rubies for eyes that glint with wild fury.",
         		"When you activate this figurehead as an action, a giant spectral boar envelops the front half of your ship and charges forward. Until your next turn, your ship's Movement increases by 2 for the turn and this figurehead counts as a {@object Blunt Ram|AETH|} for your ship.",
         		"Once you use this ability, the boar's ruby eyes crumble to dust and this ability can't be used again until 1 hour has passed and two new rubies, each worth at least 500 gp, are inserted into the eye sockets."
+        	]
+        },
+        {
+        	"name":"Octopus Figurehead",
+        	"source":"AETH",
+        	"upgradeType":[
+        		"SHP:F"
+        	],
+        	"entries":[
+        		"This wooden figurehead depicts a giant octopus with tentacles outstretched. In its eye sockets, two sapphires gleam with the fervor of the tide.",
+        		"You can activate this figurehead as an action, releasing a giant spectral octopus that envelops the front half of your ship as its ghostly tentacles lash out. For the next minute, this figurehead counts as a {@object Grappling Ram|AETH|} for your ship.",
+        		"While this figurehead is active, you can prematurely end its effect to create a smoke cloud with a radius of 500 feet that lasts for 1 minute. Everything inside the area is heavily obscured.",
+        		"Once you use this ability, the octopus's sapphire eyes crumble to dust and this ability can't be used again until 1 hour has passed and two new sapphires, each worth at least 1000 gp, are inserted into the eye sockets."
         	]
         },
         {
@@ -2026,7 +2217,27 @@
         	"entries":[
         		"{@i 2,500 gp.}",
         		"{@i Test tubes, piping, alembics, and jars fill the room. The smell of dried herbs and spilt tinctures fill the air as a cauldron bubbles atop an open flame.}",
-        		"Alchemist's supplies and an herbalism kit are always considered to be present while working in this room, and any checks made with these tools are done with advantage if the user has proficiency. "
+        		"Alchemist's supplies and an herbalism kit are always considered to be present while working in this room, and any checks made with these tools are done with advantage if the user has proficiency.",
+        		"Furthermore, when mixing potions in this room per the DMG rules on {@book Mixing Potions|DMG|7|Variant: Mixing Potions}, you may reroll 1's when rolling on the {@table Variant: Mixing Potions; Potion Miscibility} if you are proficient with alchemist's supplies."
+        	]
+        },
+        {
+        	"name":"Assassin's Garden",
+        	"source":"AETH",
+        	"upgradeType":[
+        		"Ship Upgrade, Room"
+        	],
+        	"entries":[
+        		"{@i 1,000 gp.}",
+        		"{@i A warm and humid air suspends itself amongst the vine stalks and beds of soil, conjuring images of a lush jungle that belies a much deadlier purpose.}",
+        		"A Poisoner's Kit is always considered to be present while working in this room, and any checks made with the kit is done with advantage if the user has proficiency.",
+        		"This room is carefully crafted to facilitate the cultivation of toxic botanicals that you can use in poisons. Successfully cultivating a crop with a desired toxicity requires a source (seeds or spores), time (at least 1 month) and a series of successful Intelligence (Nature) check (to determine the crop size). Then, the poison must be crafted via Xanathar's {@variantrule Downtime Activity: Crafting an Item|XGE} rules.",
+        		{
+        			"type":"homebrew",
+        			"entries":[
+        					"Note: These rules are WIP for now so talk with DM about the specific values and types of growable poisons."
+        			]
+        		}
         	]
         },
         {
@@ -2062,7 +2273,7 @@
         	"entries":[
         		"{@i 1,500 gp.}",
         		"{@i An eclectic assortment of textiles and unfinished projects hang off the walls. The room is warmly lit and harkens back to a pastoral lifestyle as buckets of yarn skirt a towering loom at the center.}",
-        		"Weaver's tools and Leatherworker's tools are always considered to be present while working in this room. The time required to complete projects using these tools is halved, and any checks using these tools are made with advantage if the user has proficiency."
+        		"Weaver's tools, Leatherworker's tools, and a Disguise kit are always considered to be present while working in this room. The time required to complete projects using these tools is halved, and any checks using these tools are made with advantage if the user has proficiency."
         	]
         },
         {
@@ -2117,9 +2328,8 @@
 	        ],
 	        "rarity": "none",
 	        "entries": [
-	            "{@b Ramming Speed.} To use this ram, your ship must move 1 full hex in a straight line before entering the same space of the ship to be rammed.",
-	            "{@b Siege.} This armament's damage is doubled when calaculating damage against objects.",
-	            "{@b Impact.} When an armament with Impact hits, all crew on the targeted ship must make a DC 13 DEX save or be knocked prone."
+	            "{@b Siege, Ramming Speed, Impact.}",
+	            "Rams are devices mounted to the front of a ship, taking place of the figurehead spot."
 	        ],
 	        "actionEntries": [
 				{
@@ -2147,8 +2357,8 @@
 				"psychic"	        	
 	        ],
 	        "entries": [
-	        	"{@b Ramming Speed.} To use this ram, your ship must move 1 full hex in a straight line before entering the same space of the ship to be rammed.",
-	        	"{@b Grapple (50%).} When you hit a vehicle with this armament, the struck vehicle is automatically grappled. If a percentage value is attached to this property, that value is the percent chance of a grapple occuring."   
+	        	"{@b Ramming Speed, Grapple (50%).}",
+	        	"Rams are devices mounted to the front of a ship, taking place of the figurehead spot."
 	        ],
 	        "actionEntries": [
 				{
@@ -2177,8 +2387,8 @@
 	        ],
 	        "rarity": "none",
 	        "entries": [
-	            "{@b Ramming Speed.} To use this ram, your ship must move 1 full hex in a straight line before entering the same space of the ship to be rammed.",
-	        	"{@b Grapple.} When you hit a vehicle with this armament, the struck vehicle is automatically grappled. If a percentage value is attached to this property, that value is the percent chance of a grapple occuring."
+	            "{@b Ramming Speed, Grapple.}",
+	            "Rams are devices mounted to the front of a ship, taking place of the figurehead spot."
 	        ]
     	},
     	{
@@ -2194,7 +2404,8 @@
 	        ],
 	        "rarity": "none",
 	        "entries": [
-	            "{@b Turreted.} This armament may be fired in any direction, regardless of ship heading."
+	            "{@b Turreted.}",
+	            "A ballista is a large crossbow that fires bolts. It takes one action to load, aim, and fire the light ballista."
 	        ],
 	        "actionEntries": [
 				{
@@ -2228,7 +2439,8 @@
 	        ],
 	        "rarity": "none",
 	        "entries": [
-	            "{@b Turreted.} This armament may be fired in any direction, regardless of ship heading."
+	            "{@b Turreted.}",
+	            "A heavy ballista is a massive crossbow that fires heavy bolts. Before it can be fired, it must be loaded and aimed. It takes one action to load the weapon and one action to aim and fire it."
 	        ],
 	        "actionEntries": [
 				{
@@ -2263,7 +2475,8 @@
 	        ],
 	        "rarity": "none",
 	        "entries": [
-	            "{@b Siege.} THis armament's damage is doubled when calculating damage against objects (including ships)."
+	            "{@b Siege.}",
+	            "A mangonel is a type of catapult that hurls heavy projectiles in a high arc. This payload can hit targets behind cover. Before the mangonel can be fired, it must be loaded and aimed. It takes one actions to load the weapon and one action to aim it and fire it."
 	        ],
 	        "actionEntries": [
 				{
@@ -2298,7 +2511,9 @@
 	        ],
 	        "rarity": "none",
 	        "entries": [
-	            "{@b Siege.} THis armament's damage is doubled when calculating damage against objects (including ships)."
+	            "{@b Siege.}",
+	            "A catapult hurls large projectiles great distances in a high arc. This payload can hit targets behind cover. Before the catapult can be fired, it must be loaded and aimed. It takes one action to load the weapon, one action to aim it, and one action to fire it.",
+	            "A catapult typically hurls a heavy stone. However, it can launch other kinds of projectiles, such as barrels of oil or sewage, with different effects."
 	        ],
 	        "actionEntries": [
 				{
@@ -2333,8 +2548,8 @@
 	        ],
 	        "rarity": "none",
 	        "entries": [
-	        		"{@b Fire.} When this armament hits a ship, a fire is started on that ship.  A crewmember must use their action to put out the flame.",
-	        		"{@b Explosive.} This armament deals area damage, damaging both ship and crew. If this armament is destroyed, double the armament's damage is dealt around it to ship and crew and the armament is unrepairable."
+	        		"{@b Fire, Explosive.}",
+	        		"Flamethrowers launch projectile flame towards enemies, damaging crew and igniting flames. It takes 1 action to aim and fire the flamethrower."
 	        ],
 	        "actionEntries": [
 				{
@@ -2359,7 +2574,8 @@
 	        ],
 	        "rarity": "none",
 	        "entries": [
-	            "Jettisons are similar to catapults but launch a bundle of shrapnel as anti-crew projectiles. Ideal against crowded decks but ineffective against hulls. Creatures caught in the jettison's area of effect must make a DEX saving throw, taking no damage on a save."
+	            "Jettisons are similar to catapults but are designed to launch a bundle of shrapnel as anti-crew projectiles that are ideal against crowded decks but ineffective against hulls. Before the jettison can be fired it must be loaded and aimed. It takes one action to load and aim it, and one action to fire it.",
+	            "A jettison typically launches small pieces of sharp shrapnel. However, it can launch other kinds of projectiles, such as bundles of sling bullets, with different effects."
 	        ],
 	        "actionEntries": [
 				{
@@ -2384,7 +2600,9 @@
 	        ],
 	        "rarity": "none",
 	        "entries": [
-	            "Cannons as feared by the enemy as they are by their own crew. Terrifyingly powerful in combat both against crew and hull, cannons have a troublesome tendency to explode when destroyed, severely damaging both ship and crew around the area and rendering the armament unrepairable."
+	        	"{@b Explosive (5-foot-radius).",
+	            "Cannons as feared by the enemy as they are by their own crew. Terrifyingly powerful in combat both against crew and hull, cannons have a troublesome tendency to explode when destroyed. Before a light cannon can be fired, it must be loaded and aimed. It takes one action to load and aim it, and one action to fire it.",
+	            "A cannon typically fires shells filled with explosives that deal area damage on impact. However, it can fire other kinds of projectiles, such as round shot (a full-metal ball), with different effects."
 	        ],
 	        "actionEntries": [
 				{
