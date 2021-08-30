@@ -1588,38 +1588,38 @@
         "name": "Catamaran",
             "source": "AETH",
             "vehicleType": "SHIP", 
-            "tokenUrl":"https://raw.githubusercontent.com/anko-dango/anko-dango/main/Cog_Nude_Floating.png",
+            "tokenUrl":"https://raw.githubusercontent.com/anko-dango/anko-dango/main/Catamaran_Floating_Nude.png",
             "fluff":{
             	"images": [
 					{
 						"type": "image",
 						"href": {
 							"type": "external",
-							"url": "https://raw.githubusercontent.com/anko-dango/anko-dango/main/Cog_Nude_Full.png"
+							"url": "https://github.com/anko-dango/anko-dango/raw/main/Catamaran_Full.png"
 						}
 					}
 				]	
 			},
             "size": "G",
             "dimensions": [
-                "65 ft.",
-                "80 ft."
+                "85 ft.",
+                "60 ft."
             ],
-            "weight": 32000,
+            "weight": 50000,
              "terrain": [
                 "air"
             ],
-            "capCrew": 6,
-            "capCargo": 8,
+            "capCrew": 8,
+            "capCargo": 10,
             "pace": 0,
-            "str": 16,
+            "str": 25,
             "dex": 0,
             "con": 0,
             "int": 0,
             "wis": 0,
             "cha": 10,
             "hp": {
-                    "hp": 16,
+                    "hp": 25,
                     "dt": 0
             },
             "immune": [
@@ -1642,7 +1642,7 @@
             ],
             "hull": {
                 "ac": 18,
-                "hp": 16,
+                "hp": 25,
                 "dt": 0
             },
             "hasToken": true,
