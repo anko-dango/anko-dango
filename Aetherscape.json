@@ -127,11 +127,11 @@
 												],
 												[
 													"25",
-													"5 miles"
+													"10 miles"
 												],
 												[
 													"30",
-													"20 miles"
+													"30 miles"
 												]
 											]
 										},
@@ -140,7 +140,7 @@
 											"type": "table",
 											"caption": "Visibility Conditions",
 											"colLabels": [
-												"Wisdom (Perception) DC bonus",
+												"Wisdom (Perception) DC penalty",
 												"Condition"
 											],
 											"colStyles":[
@@ -235,6 +235,13 @@
 													"entries":[
 														"Loxodons are permitted."
 													]
+												},
+												{
+													"type":"entries",
+													"name":"{@filter UA: Travelers of the Multiverse|races|source=UA21TotM}",
+													"entries":[
+														"Plasmoid and Thri-Kreen tenatively permitted."
+													]
 												}
 											]
 										}
@@ -251,47 +258,25 @@
 									"type":"entries",
 									"name":"The Importance of Tools",
 									"entries":[
-										"In some settings or campaigns, tool proficiencies might take a backseat to skills. On a ship in the aether, however, a tool proficiency can be the difference between life and death. Having someone on your crew with the know-how to man the helm of a ship, repair a broken hull or tattered sail, or triangulate your position in the stars is what makes a great crew. Consider picking up a tool proficiency in your character's background.",
+										"In some settings or campaigns, tool proficiencies might take a backseat to skills. On a ship in the aether, however, tool proficiencies are necessary to a well-functioning ship. Having someone on your crew with the know-how to man the helm of a ship, repair a broken hull or tattered sail, or triangulate your position in the stars is what makes a great crew. Consider picking up a tool proficiency in your character's background.",
 										{
 											"type":"list",
 											"items":[
-												"{@b Vehicles (Water).} The ability to proficiently steer a waterfaring vessel is extended to ships that traverse the aether. Piloting a ship, much like driving a car, primarily requires Intelligence and Wisdom. Intelligence to understand the mechanics of your ship, and Wisdom to have the situational awareness and foresight to see the right course of action to take. Dexterity will also be valuable on occasion, especially in the cases of avoiding a fast-moving asteroid or a performing difficult maneuver.",
-												"{@b {@item Artisan's Tools|PHB}.} Almost every set of artisan's tools can find use on a ship, and many of them are nigh necessities.",
+												"{@b Vehicles (Water).} The ability to proficiently steer a waterfaring vessel is extended to ships that traverse the aether. Piloting a ship, much like driving a car, primarily requires Intelligence, Wisdom, and Dexterity. Intelligence to understand the mechanics of your ship, Wisdom to have the situational awareness and foresight to see the right course of action to take, and Dexterity to perform difficult maneuvers and take evasive action.",
+												"{@b {@item Artisan's Tools|PHB}.} Almost every set of artisan's tools can find use on a ship, and many of them are virtual necessities.",
 												{
 													"type":"list",
 													"items":[
-														"{@b {@item Carpenter's Tools|PHB}.} The signature tools of a shipwright, a set of carpenter's tools allows one to make patchwork repairs on a ship. You can use carpenter's tools to repair a ship by a number of hull points equal to your proficiency modifier. You must have appropriate materials to make the repairs, and once you repair a ship in this way, it can't be repaired in this way again until it is repaired at a shipyard.",
-														"{@b {@item Smith's Tools|PHB}.} Smith's tools function similarly to carpenter's tools but for ships equipped with metal plating.",
-														"{@b {@item Jeweler's Tools|PHB}.} Gems in this setting hold latent magical energy, and knowing the correct value of gems is a vital skill when dealing with gemforges and any bedazzled implements you might encounter.",
+														"{@b {@item Carpenter's Tools|PHB}.} A set of carpenter's tools allows one to make patchwork repairs on a ship. As an action, you can use carpenter's tools to repair a ship by 1 hull point, up to a number of hull points equal to your proficiency modifier (For example, with a proficiency bonus of +2, you can repair 2 hull points over 2 turns). You must have appropriate materials to make the repairs, and once you repair a ship in this way, it can't be repaired in this way again until it is repaired at a shipyard.",
+														"{@b {@item Smith's Tools|PHB}.} Smith's tools function identically to carpenter's tools but for ships equipped with metal plating.",
+														"{@b {@item Jeweler's Tools|PHB}.} Gems in this setting hold latent magical energy, and knowing the correct value of gems is vital when dealing with gemforges and any bedazzled implements you might encounter.",
 														"{@b {@item Cook's Utensils|PHB}.} Cooking meals with raw ingredients rather than expending rations is cheaper, lighter, and only doable with cook's utensils. When you have proficiency with these tools, you can cook meals for a whole ship. The amount of raw ingredients necessary to sustain a crew can be found in the {@book Food and Water|PHB|8|Food and Water} section of the PHB.",
-														"{@b {@item Weaver's Tools|PHB}.} Having weaver's tools let you repair sails outside of port. If sails are your only mode of propulsion, these tools could be the difference between life and death."
+														"{@b {@item Weaver's Tools|PHB}.} Having weaver's tools let you repair sails outside of port. If sails are your only mode of propulsion, these tools could be the difference between life and death.",
+														"{@b {@item Tinker's Tools|PHB}.} Armament and some ship modifications may end up damaged or destroyed, and a set of tinker's tools will be required to repair them."
 													]
 												},
 												"{@b {@item Navigator's Tools|PHB}.} Proficiency in these tools will help you figure out where you are in the system and where you need to go.",
-												"{@b {@item Forgery Kit|PHB}.} If you choose to take the less-than-legal path, the ability to forge documents could be very valuable."
-											]
-										}
-									]
-								},
-								{
-									"type":"entries",
-									"name":"Setting-Specific Background Features",
-									"entries":[
-										"The following background features may be used.",
-										{
-											"type":"list",
-											"style":"list-hang-notitle",
-											"items":[
-												{
-													"type":"item",
-													"name":"Shipwright feature: 'I'll Patch It!'",
-													"entry": "Provided you have carpenter's tools and wood (or, if dealing with a metal hull, smith's tools) you can perform repairs on a ship outside of a shipyard. When you use this ability, you can restore a number of hull points equal to your Intelligence + proficiency modifier over the course of 8 hours. Once you repair a ship in this way, it can't be repaired in this way again until it is repaired at a shipyard."
-												},
-												{
-													"type":"item",
-													"name":"Smuggler feature: 'False Flag'",
-													"entry": "You have the know-how to create a false identity for yourself and your ship. You gain advantage on ability checks to disguise a ship. Additionally, you can forge documents, including official papers and personal letters as long as you have seen an example of the kind of document or the handwriting you are trying to copy."
-												}
+												"{@b {@item Forgery Kit|PHB}.} If you choose to take a less-than-legal path, the ability to forge documents could be very valuable."
 											]
 										}
 									]
@@ -341,11 +326,25 @@
 							"type":"entries",
 							"name":"Feats",
 							"entries":[
-								"The following feats have been modified for the setting.",
+								"When making your character, you can choose one feat from this book or a published source for free.",
 								{
-									"type":"list",
-									"items":[
-										"Nevermind"
+									"type":"entries",
+									"name":"Crew Feats",
+									"entries":[
+										"If your party has origins as experienced sailors (say, seasoned pirates or members of a navy), the DM may have each player pick up a crew feat in addition to the free feat taken at character creation.",
+										"The following is a list of crew feats that represnet a specialty role that a crewmember might have. These feats are also available to any player when picking a feat.",
+										{
+											"type":"list",
+											"items":[
+												"{@feat Navigator|AETH}",
+												"{@feat Master Gunner|AETH}",
+												"{@feat Helmsman|AETH}",
+												"{@feat Sailmaster|AETH}",
+												"{@feat Engine Officer|AETH}",
+												"{@feat Boatswain|AETH}",
+												"{@feat Captain|AETH} (captains must be elected by their crew or appointed by a superior!)"
+											]
+										}
 									]
 								}
 							]
@@ -365,7 +364,7 @@
 									"name":"Ship Movement",
 									"entries":[
 										"In combat, a ship's movement speed is determined by its mode of propulsion. If power is lost on a power-dependent propulsion, speed becomes 0. On a hexgrid battlemap where 1 hex represents 100 feet, one movement is equal to one hex.",
-										"On long range travel, a ship can generally attain double its combat speed while moving on a constant heading. A ship can't become exhausted, nor can it choose to move faster, although it can move at a slower pace. Long Range Travel between major locations is determined in days.",
+										"In long range travel, a ship can generally attain double its combat speed while moving on a constant heading. A ship can't become exhausted, nor can it choose to move faster, although it can move at a slower pace. Long Range Travel between major locations is determined in days.",
 										{
 											"type":"table",
 											"caption":"Point of Interest Distances",
@@ -434,7 +433,7 @@
 									"type":"entries",
 									"name":"Ship Power",
 									"entries":[
-										"All ships must have at least one power source, although most are equipped with an auxiliary as back-up. Below are the different types of common power sources. A maximum of 2 power sources can be installed at one time on a ship, to prevent any electrical infetterence.",
+										"Many ships have propulsion or equipment that requires power, and some are even equipped with an auxiliary source as back-up. Below are the different types of common power sources. A maximum of 2 power sources can be installed at one time on a ship, to prevent any electrical infetterence.",
 										"{@filter Ship Power|vehicles|source=AETH|upgrade type=ship upgrade, power}."
 									]
 								},
@@ -442,7 +441,7 @@
 									"type":"entries",
 									"name":"Ship Propulsion",
 									"entries":[
-										"Propulsion is vital equipment on a ship and determine the speed and maneuvering capability of a ship. Both powered and unpowered propulsion exists, and many work differently depending on whether in air or aether. A maximum of 2 propulsion types can be installed on a ship but only one may be used at any time.",
+										"Propulsion is vital equipment on a ship and determine the speed and maneuvering capability of a ship. Both powered and unpowered propulsion exists, and many work differently depending on whether in air or aether. A maximum of 2 propulsion types can be installed on a ship but only one can be used at a time.",
 										"{@filter Ship Propulsion|vehicles|source=AETH|upgrade type=SHP:M}."
 									]
 								},
@@ -455,21 +454,21 @@
 											"type":"entries",
 											"name":"Hulls",
 											"entries":[
-												"A {@filter ship's hull|vehicles|source=AETH|upgrade type=SHP:H} is often one of its most defining feature, and many a legendary ship are well-known by their unique hull. A ship can only have one type of hull equipped at a time."
+												"A {@filter ship's hull|vehicles|source=AETH|upgrade type=SHP:H} is often one of its most defining feature, and many legendary ships are known for their unique hull. A ship can only have one type of hull equipped at a time."
 											]
 										},
 										{
 											"type":"entries",
 											"name":"Rooms",
 											"entries":[
-												"When a voyage might last weeks on end, a ship becomes your flying home away from home. {@filter Custom rooms|vehicles|source=AETH|upgrade type=Ship Upgrade, Room} allow you to continue your downtime activities while away from port. Keep in mind that some rooms like the Arcane Library or Assassin's Garden require components that likely won't be available at a regular shipyard."
+												"When a voyage might last weeks on end, a ship becomes your flying home away from home. {@filter Custom rooms|vehicles|source=AETH|upgrade type=Ship Upgrade, Room} allow you to continue your downtime activities while away from port. Keep in mind that some rooms like the Arcane Library or Assassin's Garden require components for construction that likely won't be available at a regular shipyard."
 											]
 										},
 										{
 											"type":"entries",
 											"name":"Figureheads",
 											"entries":[
-												"Much like a ship's hull, its figurehead is an iconic face of the ship. {@filter Most figureheads|vehicles|source=AETH|upgrade type=SHP:F} in this world have magical capabilities, ranging from useful utility to combat enhancements that can turn the tide of battle. Only one figurehead can be equipped at a time."
+												"Much like a ship's hull, {@filter figureheads|vehicles|source=AETH|upgrade type=SHP:F} are the iconic face of the ship. Some figureheads in this world have magical capabilities, ranging from useful utility to combat enhancements that can turn the tide of battle. Only one figurehead can be equipped at a time."
 											]
 										}
 									]
@@ -496,7 +495,7 @@
 											"type":"entries",
 											"name":"Towing",
 											"entries":[
-												"A ship with Anchors and Tethers may tow another ship by grappling them as long as the towed ship's propulsion is disabled. A ship can move at half-speed while towing."
+												"A ship equipped with Anchors and Tethers may tow another ship by grappling them as long as the towed ship's propulsion is disabled. A ship can move and travel at half-speed while towing."
 											]
 										},
 										{
@@ -506,7 +505,12 @@
 												"Almost any shipyard can repair ships and armament. The cost of repair is:",
 												{
 													"type":"abilityGeneric",
-													"name":"1 Hull Point",
+													"name":"1 Hull Point (Ship)",
+													"text":"100 gp"
+												},
+												{
+													"type":"abilityGeneric",
+													"name":"10 Hit Points (Armament)",
 													"text":"100 gp"
 												},
 												{
@@ -521,6 +525,24 @@
 														}
 													]
 												}
+											]
+										}
+									]
+								},
+								{
+									"type":"entries",
+									"name":"Putting it Together",
+									"entries":[
+										"On FoundryVTT, there isn't a perfect vehicle sheet that includes every aspect of an Aetherscape ship, so we use the vehicle sheet from Ghosts of Saltmarsh with attributes representing the info we need.",
+										{
+											"type":"list",
+											"items":[
+												"{@b STR} - Weight (Tons)",
+												"{@b DEX} - Movement",
+												"{@b CON} - Available Power (is automatically reduced when power-consuming equipment is installed)",
+												"{@b INT} - Num. Total Weapon Bays",
+												"{@b WIS} - Unused",
+												"{@b CHA} - Always equals 10 for the +0 modifier."
 											]
 										}
 									]
@@ -553,9 +575,9 @@
 									"type":"entries",
 									"name":"Boarding",
 									"entries":[
-										"When a ship is grappled, crew from either ship may begin boarding the other. At this point, until the grapple is broken, ship-to-ship combat is ended and crew combat begins on a battlemat with both ships side-by-side. {@b Whichever side initiated the grapple now gets to move first in crew combat, regardless of ship initiative.}",
-										"Just as in conventional D&D, each round in crew combat lasts 6 seconds. If either ship pulls away from the other, after 1 crew combat round, ship combat is reengaged and in crew are still onboard after that time.",
-										"When two ships are docked with eachother, grappled or not, crew from either ships may board the other. If either ship pulls away, ship combat is reengaged after one round (i.e., any crew still on a hostile ship has 1 turn to get back to their own)."
+										"When a ship is grappled, crew from either ship may begin boarding the other. At this point, until the grapple is broken or disengaged, ship-to-ship combat is ended and crew combat begins on a battlemat with both ships adjacent. {@b Whichever side initiated the grapple now gets to move first in crew combat, regardless of ship initiative.}",
+										"Each round in crew combat lasts a typical 6 seconds. If the ship battle included multiple ships when crew boarding occured they remain in play while the two crews battle. At initiative 20 in crew-to-crew combat, those ships not being boarded can choose to either move or launch a volley attack, but not both. Because a grappled ship's speed is 0, a ship can even fly beside one of the ships in crew combat and join the fight.",
+										"When two ships are docked with eachother, grappled or not, crew from either ships may board the other. If either ship pulls away, ship combat is reengaged, continuing the turn of the ship that disengaged."
 									]
 								},
 								{
@@ -587,15 +609,15 @@
 									"type":"entries",
 									"name":"Initative",
 									"entries":[
-										"Initiative is determined by one person on each ship, normally the captain, rolling a d20 and adding the ship's movement bonus. The entire crew of a ship moves on their ship's turn in initiative."
+										"Initiative is determined by one person on each ship, normally the captain or helmsman, rolling a d20 and adding the ship's movement to the roll. The entire crew of a ship moves on their ship's turn in initiative."
 									]
 								},
 								{
 									"type":"entries",
 									"name":"Damaging Ships",
 									"entries":[
-										"Crew can only damage a ship when they are on the ship itself or, in the case of ranged attacks, with magic or ammunition that deals bludgeoning damage. Ships are",
-										"When they deal damage, the ship loses 1 Hull Point for every 10 Hit Points dealt, rounded down. Any attack that deals less than 10 points has no effect."
+										"Crew can only damage a ship when they are on the ship itself or, in the case of ranged attacks, with magic. {@b Every ship has a default AC of 18}, which can be raised or lowered by ship modifications.",
+										"{@b Hull Points.} When dealing damage to a ship or object with hull points, the target loses 1 Hull Point for every 10 Hit Points dealt, rounded down. Any attack that deals less than 10 damage in total has no effect. For example, if a creature hits a ship for 18 damage, the ship loses 1 hull point."
 									]
 								},
 								{
@@ -603,29 +625,29 @@
 									"name":"Critical Hits",
 									"entries":[
 										"When a ship's armament scores a critical hit you can roll on the {@table ship crit|AETH|Ship Crit} table to determine an extra effect on top of doubled damage dice.",
-										"Furthermore, whenever a ship is reduced to 50% hull points (rounded down) they must roll on the table. If a critical hit brings a ship below 50% hull points, they must roll twice on the table."
+										"Furthermore, whenever a ship is reduced to 50% hull points (rounded down) for the first time in a combat, they must roll on the table. If a critical hit brings a ship below 50% hull points, they must roll twice on the table."
 									]	
 								},
 								{
 									"type":"entries",
 									"name":"Breaking Apart",
 									"entries":[
-										"When a ship hits 0 hull points it will begin to break apart. For every 10 tons of ship, roll a d6 to determine the amount of atmosphere-retaining pieces that remain. If a player is on a ship as it breaks apart, they must make a DC15 DEX saving throw to determine if they are able to hold onto a piece of atmo-retaining hull. On a fail they're ejected into the aether.",
-										"Once in space, suffocation rules apply and the creature can move only by pushing or pulling against, or climbing along a fixed object or surface within reach, similar to the Levitation spell."
+										"When a ship hits 0 hull points it will begin to break apart. For every 10 tons of ship (rounded up), roll a d6 to determine the amount of atmosphere-retaining pieces that remain. If a player is on a ship as it breaks apart, they must make a DC 15 Dexterity saving throw to determine if they are able to hold onto a piece of atmo-retaining hull. On a fail they're ejected into the aether.",
+										"Once in space, suffocation rules apply, a creature takes 1 cold damage per turn, and the creature can move only by pushing or pulling against, or climbing along a fixed object or surface within reach, similar to the Levitation spell."
 									]
 								},
 								{
 									"type":"entries",
 									"name":"Armaments",
 									"entries":[
-										"Although most ship battles end in a crew-on-crew battle, the war fought through ship-mounted armament is often what determines the winner. Armaments have both a hit point damage die and a hull point damage die. Hit points apply when hitting creatures, while the hull point dice are for hits on ships or other targets with hull points (such as gargantuan creatures).",
-										"Armament systems require a stock of supplies to use them, stored in cargo. So long as an applicable supply of ammunition is on the ship, an armament may fire once per turn, unless otherwise specified.",
-										"By default, an armament attack will aim only at the general ship hull. To target a specific part of the ship (such as crew, armament, or other systems), the attacker can do so with disadvantage. Any attempts to target specific ship parts beyond their armament's non-disadavantaged range is not possible.",
+										"Although many ship battles end in a crew-on-crew battle, the battle fought through ship-mounted armament is often what determines the winner. Armaments have both a hit point damage die and a hull point damage die. Hit points apply when hitting creatures, while the hull points are for hits on ships, armament, or other targets with hull points (such as gargantuan creatures).",
+										"Armament systems require a stock of ammunition to use them, stored in cargo. So long as an applicable supply of ammunition is on the ship, an armament may fire up to once per turn, unless otherwise specified.",
+										"By default, an armament attack will aim only at the general ship hull. To target a specific part of the ship (such as crew, armament, or other systems), the attacker can make an attack at the part with disadvantage. Any attempts to target specific ship parts beyond their armament's non-disadavantaged range is not possible. For example, a mangonel has a range of (400ft/1000ft) and can therefore only target specific ship parts if the target is within 400ft. ",
 										{
 											"type":"inset",
-											"name":"Weapon Bays",
+											"name":"Destroying armament.",
 											"entries":[
-												"Armament can only be used while in a weapon bay. A ship has a number of weapon bays equal to half the total cargo space of your ship (rounded down), so if the maximum cargo capacity of a ship is 10 tons, that ship has 2 weapon bays."
+												"Just like a ship hull, ship armament uses hull points instead of hit points and an armament typically has between 1-4 hull points. With a few solid hits, you can destroy an armament, disabling that ship's ability to fight."
 											]
 										},
 										{
@@ -699,7 +721,7 @@
 												"{@b Tether.} When a vehicle is tethered it cannot use its movement to move farther from your ship. Once on each of your ship's turns thereafter, your crew may spend 2 crew actions to use the ship harpoon again, reeling the tethered ship closer by 1 hex. If this action pulls the ship into your hex, that ship is now grappled by you. The tethered ship may break the tether by destroying the harpoon, rope, or weapon.",
 												"{@b Ramming Speed.} To use a ram, your ship must move 1 full hex in a straight line before entering the same space of the target vehicle.",
 												"{@b Fire.} When this armament hits a ship, a fire is started on that ship. A crewmember must use their action to put out the flame.",
-												"{@b Grapple.} When you hit a vehicle with this armament, the struck vehicle is automatically grappled. If a percentage value is attached to this property, roll a percentile die. If the roll is higher than the value then the grapple succeeds. Otherwise, the grapple fails."
+												"{@b Grapple.} When you hit a vehicle with this armament, the struck vehicle is automatically grappled. If a percentage value is attached to this property, roll a percentile die. If the roll is higher than the value then the grapple succeeds. Otherwise, the grapple fails. To disengage a grapple, the ship must expend all available movement."
 											]
 										}
 									]
@@ -1356,100 +1378,109 @@
 	],
 	"feat":[
 		{
-			"name":"Gunner (Aetherscape)",
-			"source":"AETH",
-			"ability": [
-				{
-					"dex": 1
-				}
-			],
-			"weaponProficiencies": [
-				{
-					"firearms": true
-				}
-			],
-			"entries": [
-				"You have a quick hand and keen eye when employing firearms, granting you the following benefits:",
-				{
-					"type": "list",
-					"items": [
-						"Increase your Dexterity score by 1, to a maximum of 20.",
-						"You gain proficiency with firearms (see \"{@variantrule Firearms|DMG}\" in the Dungeon Master's Guide).",
-						"You ignore the loading property of firearms.",
-						"Being within 5 feet of a hostile creature doesn't impose disadvantage on your ranged attack rolls.",
-						{
-							"type":"homebrew",
-							"entries":[
-								"While manning ship armament, you count as 2 crewmembers for the purposes of operating that armament. If the crew requirement is 1, you can still only make 1 attack per turn."
-							]
-						}
-					]
-				}
-			]
-		},
-		{
-			"name":"Artificer Initiate (Aetherscape)",
-			"source":"AETH",
-			"toolProficiencies": [
-				{
-					"artisan's tools": true
-				}
-			],
-			"additionalSpells": [
-				{
-					"ability": "int",
-					"innate": {
-						"_": {
-							"_": [
-								{
-									"choose": "level=0|class=Artificer"
-								}
-							],
-							"daily": {
-								"1": [
-									{
-										"choose": "level=1|class=Artificer"
-									}
-								]
-							}
-						}
-					}
-				}
-			],
-			"entries": [
-				"You've learned some of an artificer's inventiveness:",
-				{
-					"type": "list",
-					"items": [
-						"You learn one cantrip of your choice from the {@filter artificer spell list|spells|level=0;1|class=artificer}, and you learn one 1st-level spell of your choice from {@filter that list|spells|level=0;1|class=artificer}. Intelligence is your spellcasting ability for these spells.",
-						"You can cast this feat's 1st-level spell without a spell slot, and you must finish a long rest before you can cast it in this way again. You can also cast the spell using any spell slots you have.",
-						"You gain proficiency with one type of {@filter artisan's tools|items|type=artisan's tools} of your choice, and you can use that type of tool as a spellcasting focus for any spell you cast that uses Intelligence as its spellcasting ability.",
-						{
-							"type":"homebrew",
-							"entries":[
-								"You can attempt to repair magical items with your artisan's tools."
-							]
-						}
-					]
-				}
-			]
-		},
-		{
-			"name": "Inspiring Leader (Aetherscape)(Revised)",
+			"name": "Captain",
 			"source": "AETH",
-			"prerequisite": [
+			"entries": [
+				"Your crew has entrusted you to take command. You gain the following benefits:",
 				{
-					"ability": [
-						{
-							"cha": 13
-						}
+					"type":"list",
+					"items":[
+						"You automatically succeed on Ship Shaken rolls from the {@table Ship Crit|AETH|Ship Crit table}.",
+						"While in ship combat, you can use your bonus action to give orders to another crewmember, giving them a benefit based on their current station that lasts until the end of the turn. A gunner cannot roll attacks with ship armament at disadvantage; A helmsmen gain advantage on checks made using Vehicles (Water); Other stations can make a single roll at advantage. You can use this feature a number of times equal to your proficiency modifier per long rest.",
+						"You gain proficiency with {@item Calligrapher's Supplies|PHB}, if you don't already have it."
 					]
-				}
-			],
-			"ability": [
+				}	
+			]
+		},
+		{
+			"name": "Watchkeeper",
+			"source": "AETH",
+			"entries": [
+				"Always with an eye to the horizon, you are an expert at navigating the stars. You gain the following benefits:",
 				{
-					"cha": 1
-				}
+					"type":"list",
+					"items":[
+						"You are accustomed to long shifts, and only require 4 hours of sleep during a long rest to benefit from the rest. While traveling aboard a ship, you can take 2 watches per rotation.",
+						"You are well versed in star charts and can make sense of even the most obscure ones. You gain a +5 bonus to your rolls when using {@item Navigator's Tools|PHB} to decipher star charts and maps.",
+						"You gain proficiency with {@item Navigator's Tools|PHB}, if you don't already have it."
+					]
+				}	
+			]
+		},
+		{
+			"name": "Helmsmaster",
+			"source": "AETH",
+			"entries": [
+				"You can pilot a ship like a leaf on the wind. You gain the following benefits:",
+				{
+					"type":"list",
+					"items":[
+						"You have advantage on Vehicles (Water) checks made using Dexterity.",
+						"If you ready ship movement as an action on your turn, when the movement is triggered, attacks made against your ship or crew are made at disadvantage until the end of the turn.",
+						"You gain proficiency with Vehicles (Water), if you don't already have it."
+					]
+				}	
+			]
+		},
+		{
+			"name": "Sailmaster",
+			"source": "AETH",
+			"entries": [
+				"You are an expert at traversing and handling a ship's rigging. You gain the following benefits:",
+				{
+					"type":"list",
+					"items":[
+						"You have advantage on rolls to tie knots.",
+						"You have a climbing speed equal to your walking speed when scaling ropes or masts.",
+						"If your ship is using sail propulsion, you can use an action to increase your ships's movement by 1 for that turn. While traveling, you can spend 8 hours per day managing the rigging and sail, increasing your ship's movement by 1 for that day of travel. ",
+						"You gain proficiency with {@item Weaver's Tools|PHB}, if you don't already have it. You know how to repair {@vehicle aether sails|AETH} with these tools."
+					]
+				}	
+			]
+		},
+		{
+			"name": "Artifice Officer",
+			"source": "AETH",
+			"entries": [
+				"You know the ins and outs of ship systems. You gain the following benefits:",
+				{
+					"type":"list",
+					"items":[
+						"You can reduce the required power of one vehicle upgrade that would normally require power by 1, to a minimum of 0 required power.",
+						"You can push a powered propulsion system to its limit. You can increase your ship's speed by 2, using your action each turn to maintain the increase for a maximum duration of 10 minutes. Once you subject a ship's propulsion to this stress, you can't do it again until you repair the system at a shipyard.",
+						"You gain proficiency with {@item Tinker's Tools|PHB}, if you don't already have it. You know how to repair artificered objects with these tools."
+					]
+				}	
+			]
+		},
+		{
+			"name": "Boatswain",
+			"source": "AETH",
+			"entries": [
+				"You are the logistical expert of your vessel. You gain the following benefits:",
+				{
+					"type":"list",
+					"items":[
+						"You can move cargo in and out of your ship in half the normal time.",
+						"You can perform more thorough repairs using carpenter's or smith's tools while away from port. You can spend 8 hours repairing the ship, even if you already repaired it once. can also add your intelligence modifier to the number of hull points repaired. You must have appropriate materials onboard to perform the repair. Once you repair a ship with this feature, that ship can't be repaired in this way again until it is repaired at a shipyard.",
+						"You gain proficiency with {@item Carpenter's Tools|PHB} and {@item Smith's Tools|PHB}, if you don't already have them."
+					]
+				}	
+			]
+		},
+		{
+			"name": "Master Gunner",
+			"source": "AETH",
+			"entries": [
+				"You know ship armament . You gain the following benefits:",
+				{
+					"type":"list",
+					"items":[
+						"When you use your action to operate a ship's armament, your action counts as 2 actions for the purposes of operating that armament. A ship's armament still cannot be fired more than once per round.",
+						"When you hit an armament, and you didn't have disadvantage on the attack, the hit is a critical hit.",
+						"You gain proficiency with {@item Tinker's Tools|PHB}, if you don't already have them."
+					]
+				}	
 			]
 		}
 	],
@@ -1485,7 +1516,7 @@
             "str": 32,
             "dex": 0,
             "con": 0,
-            "int": 0,
+            "int": 6,
             "wis": 0,
             "cha": 10,
             "hp": {
@@ -1550,7 +1581,7 @@
             "str": 16,
             "dex": 0,
             "con": 0,
-            "int": 0,
+            "int": 2,
             "wis": 0,
             "cha": 10,
             "hp": {
@@ -1615,7 +1646,7 @@
             "str": 25,
             "dex": 0,
             "con": 0,
-            "int": 0,
+            "int": 4,
             "wis": 0,
             "cha": 10,
             "hp": {
@@ -1680,7 +1711,7 @@
             "str": 22,
             "dex": 0,
             "con": 0,
-            "int": 0,
+            "int": 4,
             "wis": 0,
             "cha": 0,
             "hp": {
@@ -1745,7 +1776,7 @@
             "str": 8,
             "dex": 0,
             "con": 0,
-            "int": 0,
+            "int": 1,
             "wis": 0,
             "cha": 0,
             "hp": {
@@ -2033,7 +2064,7 @@
         		"SHP:O"
         	],
         	"entries":[
-        		"{@i +1 Movement, -1 Power, Levitation, Aether only. 500 gp per ton.}",
+        		"{@i +1 Movement (Aether only), -1 Power, Levitation. 500 gp per ton.}",
         		"Although too weak to propel the ship on their own, when these small Aetherite crystals are powered they assist a ship in Aetherflight."
         	]
         },
@@ -2119,8 +2150,8 @@
         		"SHP:H"
         	],
         	"entries":[
-        		"{@i -2 AC.}",
-        		"The ship’s hull is warded against divination, with faintly sparkling diamond dust and thin layers of lead worked into the wood. The ship itself cannot be found by an echo pool or with spells like the locate object spell, and creatures aboard the ship have advantage on their saving throws against divination magic.",
+        		"{@i -2 AC. +5 Wisdom (Perception) DC }",
+        		"The ship’s hull is warded against divination, with faintly sparkling diamond dust and thin layers of lead worked into an ebony wood. The ship is harder to spot in the void and cannot be found by an echo pool or with spells like the locate object spell, and creatures aboard the ship have advantage on their saving throws against divination magic.",
         		"This modification softenes the hull, reducing its ability to deflect or absorb attacks from armament."
         	]
         },
@@ -2229,7 +2260,7 @@
         	],
         	"entries":[
         		"{@i 1,000 gp.}",
-        		"{@i A warm and humid air suspends itself amongst the vine stalks and beds of soil, conjuring images of a lush jungle that belies a much deadlier purpose.}",
+        		"{@i A warm and humid air suspends itself amongst the vine stalks and colonies of mushrooms, conjuring images of a lush jungle that belies a much deadlier purpose.}",
         		"A Poisoner's Kit is always considered to be present while working in this room, and any checks made with the kit is done with advantage if the user has proficiency.",
         		"This room is carefully crafted to facilitate the cultivation of toxic botanicals that you can use in poisons. Successfully cultivating a crop with a desired toxicity requires a source (seeds or spores), time (at least 1 month) and a series of successful Intelligence (Nature) check (to determine the crop size). Then, the poison must be crafted via Xanathar's {@variantrule Downtime Activity: Crafting an Item|XGE} rules.",
         		{
@@ -2351,7 +2382,7 @@
 	        "size":"H",
 	        "objectType": "SW",
 	        "ac":"19",
-	        "hp":"8",
+	        "hp":"5",
 	        "immune":[
 				"poison",
 				"psychic"	        	
@@ -2380,7 +2411,7 @@
 	        "size":"H",
 	        "objectType": "SW",
 	        "ac":"17",
-	        "hp":"8",
+	        "hp":"5",
 	        "immune":[
 				"poison",
 				"psychic"	        	
@@ -2397,7 +2428,7 @@
 	        "size":"M",
 	        "objectType": "SW",
 	        "ac":"15",
-	        "hp":"3",
+	        "hp":"1",
 	        "immune":[
 				"poison",
 				"psychic"	        	
@@ -2432,7 +2463,7 @@
 	        "size":"L",
 	        "objectType": "SW",
 	        "ac":"15",
-	        "hp":"6",
+	        "hp":"3",
 	        "immune":[
 				"poison",
 				"psychic"	        	
@@ -2468,7 +2499,7 @@
 	        "size":"L",
 	        "objectType": "SW",
 	        "ac":"15",
-	        "hp":"5",
+	        "hp":"2",
 	        "immune":[
 				"poison",
 				"psychic"	        	
@@ -2504,7 +2535,7 @@
 	        "size":"H",
 	        "objectType": "SW",
 	        "ac":"15",
-	        "hp":"8",
+	        "hp":"3",
 	        "immune":[
 				"poison",
 				"psychic"	        	
@@ -2541,7 +2572,7 @@
 	        "size":"M",
 	        "objectType": "SW",
 	        "ac":"17",
-	        "hp":"5",
+	        "hp":"2",
 	        "immune":[
 				"poison",
 				"psychic"	        	
@@ -2567,7 +2598,7 @@
 	        "size":"L",
 	        "objectType": "SW",
 	        "ac":"15",
-	        "hp":"5",
+	        "hp":"3",
 	        "immune":[
 				"poison",
 				"psychic"	        	
@@ -2593,7 +2624,7 @@
 	        "size":"L",
 	        "objectType": "SW",
 	        "ac":"19",
-	        "hp":"5",
+	        "hp":"4",
 	        "immune":[
 				"poison",
 				"psychic"	        	
