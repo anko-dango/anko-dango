@@ -1386,8 +1386,8 @@
 					"type":"list",
 					"items":[
 						"You automatically succeed on Ship Shaken rolls from the {@table Ship Crit|AETH|Ship Crit table}.",
-						"While in ship combat, you can use your bonus action to give orders to another crewmember, giving them a benefit based on their current station that lasts until the end of the turn. A gunner cannot roll attacks with ship armament at disadvantage; A helmsmen gain advantage on checks made using Vehicles (Water); Other stations can make a single roll at advantage. You can use this feature a number of times equal to your proficiency modifier per long rest.",
-						"You gain proficiency with {@item Calligrapher's Supplies|PHB}, if you don't already have it."
+						"While in ship combat, you can use your bonus action to command another crewmember, giving them a benefit based on their current station that lasts until the end of the turn. A gunner cannot roll attacks with ship armament at disadvantage; A helmsman can turn the ship at no movement cost; A miscellaneous station can make a single roll at advantage. You can use this feature a number of times equal to your proficiency modifier per long rest.",
+						"You gain proficiency with {@item Cartographer's Supplies|PHB}, if you don't already have it."
 					]
 				}	
 			]
@@ -1401,7 +1401,7 @@
 					"type":"list",
 					"items":[
 						"You are accustomed to long shifts, and only require 4 hours of sleep during a long rest to benefit from the rest. While traveling aboard a ship, you can take 2 watches per rotation.",
-						"You are well versed in star charts and can make sense of even the most obscure ones. You gain a +5 bonus to your rolls when using {@item Navigator's Tools|PHB} to decipher star charts and maps.",
+						"You are well versed in star charts and can make sense of even the most obscure maps. You gain a +5 bonus to your rolls when using {@item Navigator's Tools|PHB} to decipher star charts and maps.",
 						"You gain proficiency with {@item Navigator's Tools|PHB}, if you don't already have it."
 					]
 				}	
@@ -1416,7 +1416,7 @@
 					"type":"list",
 					"items":[
 						"You have advantage on Vehicles (Water) checks made using Dexterity.",
-						"If you ready ship movement as an action on your turn, when the movement is triggered, attacks made against your ship or crew are made at disadvantage until the end of the turn.",
+						"If you ready ship movement as an action on your turn, when the movement is triggered, attacks made against your ship or crew are made at disadvantage until the end of that turn.",
 						"You gain proficiency with Vehicles (Water), if you don't already have it."
 					]
 				}	
@@ -1432,23 +1432,23 @@
 					"items":[
 						"You have advantage on rolls to tie knots.",
 						"You have a climbing speed equal to your walking speed when scaling ropes or masts.",
-						"If your ship is using sail propulsion, you can use an action to increase your ships's movement by 1 for that turn. While traveling, you can spend 8 hours per day managing the rigging and sail, increasing your ship's movement by 1 for that day of travel. ",
+						"If your ship is using sail propulsion, you can use an action to increase your ships's movement by 1 for that turn. While traveling, you can spend 8 hours per day managing the rigging and sails, increasing your ship's movement by 1 for that day of travel. ",
 						"You gain proficiency with {@item Weaver's Tools|PHB}, if you don't already have it. You know how to repair {@vehicle aether sails|AETH} with these tools."
 					]
 				}	
 			]
 		},
 		{
-			"name": "Artifice Officer",
+			"name": "Artifice Engineer",
 			"source": "AETH",
 			"entries": [
 				"You know the ins and outs of ship systems. You gain the following benefits:",
 				{
 					"type":"list",
 					"items":[
-						"You can reduce the required power of one vehicle upgrade that would normally require power by 1, to a minimum of 0 required power.",
+						"You can reduce the required power of one vehicle modification that would normally require power by 1, to a minimum of 0 required power.",
 						"You can push a powered propulsion system to its limit. You can increase your ship's speed by 2, using your action each turn to maintain the increase for a maximum duration of 10 minutes. Once you subject a ship's propulsion to this stress, you can't do it again until you repair the system at a shipyard.",
-						"You gain proficiency with {@item Tinker's Tools|PHB}, if you don't already have it. You know how to repair artificered objects with these tools."
+						"You gain proficiency with {@item Tinker's Tools|PHB}, if you don't already have it. You know how to repair artificed ship parts with these tools."
 					]
 				}	
 			]
@@ -1462,7 +1462,7 @@
 					"type":"list",
 					"items":[
 						"You can move cargo in and out of your ship in half the normal time.",
-						"You can perform more thorough repairs using carpenter's or smith's tools while away from port. You can spend 8 hours repairing the ship, even if you already repaired it once. can also add your intelligence modifier to the number of hull points repaired. You must have appropriate materials onboard to perform the repair. Once you repair a ship with this feature, that ship can't be repaired in this way again until it is repaired at a shipyard.",
+						"You can perform more thorough repairs using carpenter's or smith's tools while away from port. You can also add your intelligence modifier to the number of hull points repaired when you use your tools to repair a hull. Additionally, you can repair a ship over the course of 8 hours, even if it has been previously repaired by tools. The ship must not be moving while you perform these repairs. Once you repair a ship with this feature, that ship can't be repaired in this way again until it is repaired at a shipyard.",
 						"You gain proficiency with {@item Carpenter's Tools|PHB} and {@item Smith's Tools|PHB}, if you don't already have them."
 					]
 				}	
