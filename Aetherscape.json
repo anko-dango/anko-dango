@@ -26,7 +26,7 @@
 				{
 					"name":"Chapter 1: The Setting",
 					"headers":[
-						"Everything Under Pelor's Light",
+						"The Known World",
 						"A Physical Connection to the Gods",
 						"Wait, Where's My Helmet?"
 					]
@@ -68,17 +68,17 @@
 					"entries":[
 						{
 							"type":"entries",
-							"name":"Everything Under Pelor's Light",
+							"name":"The Known World",
 							"entries":[
-								"When the secrets of aetherflight were rediscovered, the Known World changed forever. The ubiquity of air travel has made the continents of Erathis an interconnected world, and a nation's concern now ends neither at the water's edge nor the sky's limit, but at the edge of the Pelor's light. Orbiting Erathis are two moons: Sehanine and Ioun (ion). Sehanine is well-known as the ancestral elven homeland and gate to the Feywild and Shadowfell. Ioun orbits farther away and is best known for the arcane potency that manifests around it as well as those who travel there to study it.",
-								"Farther beyond, Port Avandra, named wantingly in honor of the goddess of freedom and luck, serves as the final bastion of civilization. Beyond that, skirting the furthest reaches of Pelor's light, lies Tharizdun's Disc -- an asteroid belt of ill omen and great riches. Wrecked hulls of those who went mad amongst the rocks serve as warnings to those daring to delve further into the Black. Stories of what lies beyond warn of behemoth creatures with unfathomable length, but such stories are rare and often mere testimonies of the mad who lost sight of Pelor's light."
+								"When the secrets of aetherflight were rediscovered some 300 years ago, the known world changed forever. The ability to travel through air and space made the continents of Erathis an interconnected world, expanding the reach of an empire far beyond the water's edge and even the sky's limit. Soon, civilizations had spread to the very edges of Pelor's light, starting with the two moons of Erathis: Sehanine and Ioun (pronounced 'ion'). Sehanine, named after the goddess of the moon, is well-known as the ancestral elven homeland and gateway to the Feywild and Shadowfell. Ioun, named after the goddess of Knowledge, is smaller, has a larger orbit, and is best known for the Iounian Order who sequester themselves in an unending arcane storm on the moon.",
+								"Farther beyond, Port Avandra, named wantingly in honor of the goddess of freedom and luck, serves as the final bastion of civilization. Beyond that, skirting the furthest reaches of Pelor's light, lies Tharizdun's Disc -- an asteroid belt of ill omen and great riches. Filled with gemstones and valuable ores, the wrecked hulls of those who went mad amongst the rocks serve as warnings to those daring to delve further. Tales of what lies beyond warn of ancient evils and unfathomable creatures, but such stories are rare and often mere testimonies of the mad who lost sight of Pelor."
 							]
 						},
 						{
 							"type":"entries",
 							"name":"A Physical Connection to the Gods",
 							"entries":[
-								"Gods in this world are no mere stories, nor are they distant spectators. The gods are very real but make their presence known in different ways. Some, such as Pelor -- god of sun, summer, and time -- are believed to manifest themselves in parts of the world, such as the Sun itself. Others like Erathis -- god of civilization, invention, and law -- have even been known to wander the realm in a mortal form and interact with its inhabitants. ",
+								"Gods in this world are very real but make their presence known in different ways. Some, such as Pelor, god of sun, summer, and time, are believed to manifest themselves as parts of the world, such as the Sun itself. Others like Erathis, goddess of civilization, invention, and law, have even been known to wander the realm in a mortal form and interact with its inhabitants. ",
 								"The various planes are also very present in this world. Portals to the Shadowfell are plentiful on the dark side of Sehanine, while crossings to the Feywild can be found on bright side. Gates to the Elemental planes can be found on Erathis, although finding one is no easy task. And, if one travels far beyond Pelor's reach, they will eventually find themselves in the Astral plane.",
 								"This setting uses the {@table A Sample Pantheon; Dawn War Deities|DMG|Dawn War} pantheon."
 							]
@@ -185,66 +185,54 @@
 									"type":"entries",
 									"entries":[
 										{
-											"type":"entries",
-											"entries":[
-												{
 													"type":"entries",
 													"name":"{@filter PHB|races|source=PHB}",
 													"entries":[
-														"All races are permitted."
+														"All races."
 													]
 												},
 												{
 													"type":"entries",
 													"name":"{@filter EEPC|races|source=EEPC}",
 													"entries":[
-														"All races are permitted."
+														"All races."
 													]
 												},
 												{
 													"type":"entries",
 													"name":"{@filter MTF|races|source=MTF}",
 													"entries":[
-														"The elf, tiefling, and gnome subraces are permitted."
+														"All elf, tiefling, and gnome subraces."
 													]
 												},
 												{
 													"type":"entries",
 													"name":"{@filter VGM|races|source=VGM}",
 													"entries":[
-														"All races are permitted."
+														"All races."
 													]
 												},
 												{
 													"type":"entries",
 													"name":"{@filter ERLW |races|source=ERLW}",
 													"entries":[
-														"Changelings and shifters are permitted."
+														"Changelings and shifters."
 													]
 												},
 												{
 													"type":"entries",
 													"name":"{@filter MOT|races|source=MOT}",
 													"entries":[
-														"All MOT races except centaurs are permitted."
+														"All MOT races except centaurs."
 													]
 												},
 												{
 													"type":"entries",
 													"name":"{@filter GGR|races|source=GGR}",
 													"entries":[
-														"Loxodons are permitted."
-													]
-												},
-												{
-													"type":"entries",
-													"name":"{@filter UA: Travelers of the Multiverse|races|source=UA21TotM}",
-													"entries":[
-														"Plasmoid and Thri-Kreen tenatively permitted."
+														"Loxodons."
 													]
 												}
-											]
-										}
 									]
 								}
 							]
@@ -342,7 +330,7 @@
 												"{@feat Sailmaster|AETH}",
 												"{@feat Engine Officer|AETH}",
 												"{@feat Boatswain|AETH}",
-												"{@feat Captain|AETH} (captains must be elected by their crew or appointed by a superior!)"
+												"{@feat Captain|AETH} (captains must be elected by their crew!)"
 											]
 										}
 									]
@@ -355,6 +343,13 @@
 					"type":"section",
 					"name":"Chapter 3: Ships",
 					"entries":[
+						{
+							"type":"entries",
+							"name":"Introduction",
+							"entries": [
+								"Ship combat and mechanics are detailed in this chapter, but if a group is less-inclined to get into the nitty-gritty of ship battles, knowing all the stuff in this chapter isn't necessary."
+							]
+						},
 						{
 							"type":"entries",
 							"name":"Ship Mechanics",
@@ -714,7 +709,7 @@
 											"name":"Armament Properties",
 											"entries":[
 												"{@b Turreted.} A turreted armament can fire in any direction, regardless of ship heading.",
-												"{@b Armored.} All crew members manning this armament gain +4 to their AC.",
+												"{@b Armored.} All crew members manning this armament gain +3 to their AC and advantage on Dexterity saving throws against attacks from ship armament and their effects.",
 												"{@b Explosive.} Armament with the Explosive property deals area damage on impact to both ship and crew. If an armament with the explosive property is destroyed, it immediately deals a critical hit on its position and the armament is unrepairable. If no radius is specified, any damage or effects occur in a 5-foot-radius.",
 												"{@b Siege.} Deals double damage against structures. Does not apply to ships.",
 												"{@b Impact.} When an armament with Impact hits, all crew on the ship struck must make a DC 15 DEX save or be unable to move or use armament until next turn.",
@@ -738,17 +733,14 @@
 							"type":"entries",
 							"name":"The Common Law",
 							"entries":[
-								"The common law is a code honored by almost every sailor of the aether. These laws are culturally engrained and common sense for any aetherfaring crew, and anyone found to have violated the common law will be held in the lowest regard by their fellow sailors.",
+								"The Common Law is a code honored by almost every sailor of the aether. It is believed that Avandra, goddess of luck, has ordained the laws, and so anyone found to have violated the common law will be shunned by their fellow sailors. ",
 								{
 									"type":"list",
 									"style":"list-decimal",
 									"items":[
-										"Surrendered crew shall not be executed and shall not be marooned except with good prospect of survival.",
 										"The right of Parley shall be respected.",
-										"Mutiny without just cause is punishable by death.",
-										"A commander who subjects their crew to cruel or unjust treatment shall be punished proportionally.",
-										"Anyone who helps recover another person's ship or cargo is entitled to commensurate reward. If no person has claim to the ship or cargo, they who recover it may take it as salavage.",
-										"Living persons shall not be jettisoned into aether and abandoned."
+										"Surrendered crew shall not be executed and shall not be marooned except with good prospect of survival.",
+										"Crew shall not mutiny without just cause."
 									]
 								},
 								{
@@ -765,7 +757,7 @@
 							"type":"entries",
 							"name":"Factions in the Known World",
 							"entries":[
-								"Too many factions to count exist throughout Pelor's Disc.  The following are just the most well-known.",
+								"Too many factions to count exist throughout Pelor's Disc.  The following are just some of the factions you may be more likely to encounter.",
 								{
 									"type":"entries",
 									"name":"The Alliance",
@@ -814,7 +806,7 @@
 							"type":"entries",
 							"name":"Races in Aetherscape",
 							"entries":[
-								"Every race has a unique place in the universe. The following are just some of the setting-speficic aspects of races as a jumping-off point.",
+								"Every race has a unique place in the universe. The following is just some of the setting-speficic aspects of races to use as a jumping-off point.",
 								"{@b High & Eladrin Elves.} Over the millenia many elves have learned to call Erathis home but soon after the advent of aetherflight, many of the high elf enclaves made pilgrimage to Sehanine and started anew. Upon arrival, some high elves chose to live in the Feywild. Their descendants, known as the eladrin, now often venture from the feywild to the material plane in their youth to explore and understand the echo of their world. Despite being relatively new, Arlleuad, the high elf capital city, is well known from the Salts of Drum to Port Avandara.",
 								"{@b Drow & Shadar-Kai Elves.} While most peoples know the larger moon as Sehanine, the Drow know it as Nghysgod (giss-god). Just as the High Elves did, the Drow quickly voyaged from Erathis to their ancestral home, but with the intention of creating a nation fully devoted to Lolth. Gwe-cythraul (Gway-keth-isle) stands as a monument to Lolth and the drow who inhabit the city live fully immersed in Lolth's dogma. The Drow have little interest in the Shadowfell but the Raven Queen who rules over the Shadowfell has taken great offense to their sacrilege so close to her domain. The shadar-kai, servants to the Raven Queen, wage war against the Drow to stop their affronts to her realm.",
 								"{@b Dwarves.} Most dwarves still call Erathis their home, but the rich prospects of a life amongst the stars has driven many a dwarf away from their underground dwellings. As it turns out, life in a ship isn't much different from life in the mines, and the asteroids of Tharizdun's disc have riches aplenty.",
@@ -2150,7 +2142,7 @@
         		"SHP:H"
         	],
         	"entries":[
-        		"{@i -2 AC. +5 Wisdom (Perception) DC }",
+        		"{@i -2 AC. +5 Wisdom (Perception) DC.}",
         		"The ship’s hull is warded against divination, with faintly sparkling diamond dust and thin layers of lead worked into an ebony wood. The ship is harder to spot in the void and cannot be found by an echo pool or with spells like the locate object spell, and creatures aboard the ship have advantage on their saving throws against divination magic.",
         		"This modification softenes the hull, reducing its ability to deflect or absorb attacks from armament."
         	]
@@ -2162,9 +2154,9 @@
         		"SHP:H"
         	],
         	"entries":[
-        		"{@i  AC.}",
-        		"Thick, glacial ice forms the hull of the ship. Any creature onboard a ship with this hull installed is subjected to {@hazard extreme cold}.",
-        		"This modification softenes the hull, reducing its ability to deflect or absorb attacks from armament."
+        		"{@i -4 Hull Points. +1 AC.}",
+        		"Thick, glacial ice comprises the hull of the ship. Any creature onboard a ship with this hull installed is subjected to {@hazard extreme cold}. Fires cannot be started on a ship equipped with a glacial hull. If 'Fire' is rolled on the {@table Ship Crit|AETH} table, treat it as 'No Effect'. ",
+        		"This modification weakens the overall integrity of the hull, reducing its ability to deflect or absorb attacks from armament."
         	]
         },
         {
@@ -2674,4 +2666,5 @@
 			]
     	}
 	]
+	
 }
